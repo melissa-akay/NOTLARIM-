@@ -1,0 +1,20 @@
+h2{
+    color: mediumblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    color: slategray;
+    font-size: 20px;
+    text-align: center;
+}
+/* EXTERNAL CSS İLE,
+   tek bir css dosyası kurulur ve sonrasında istediğin html sayfalarında bu kullanılabilir.
+   html de kullanılabilmesi bu css dosyasına link bağlantısı kurulur.
+   External yani harici yani dışarıdan yazılır.
+   Diğerleri gibi içeriden head içerisinde style etiketi ile yazılmaz!
+*/
+/* css dosyasını link ile html sayfasına dahil ederken, link etiketi aç,
+   css dosyasının adını href'in içerisine yaz.
+*/

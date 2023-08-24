@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>/*display ile otomatik olarak block veya inline olan elementlerin, 
+    bu özelliklerini değiştirebiliriz.*/
+    /* displayde none seçeneği seçilirse o div veya displayin uygulanacağı etiket her ne ise
+    o etiket görünmez olur.*/
+        div{
+            width: 400px;
+            height: 100px;
+            background: lightblue;
+            margin: 5px;/* kutular birbirine yapışmasın diye bunu ekledik*/
+            /*display:inline;*/
+            /* display'i inline olarak belirtilen divlerin genişliklik gibi büyüklükleri değiştirilemez*/
+            /* display;block,inline,none ve hem block hem de inline olarak 4 tane seçeneğe sahiptir.*/
+            display: inline-block; /* displayde bu seçenek kullanıldığında genişlik yükseklik gibi büyüklüklükler kullanılabilir.*/
+        }
+
+        a{
+            display: block; /* bunu yazmadan önce linkler yanyana dizilmişti, bunu yazdıktan
+                              sonra alt alta geçtiler, block elementi özelliği gösterdiler.*/
+        }
+
+        span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="kutu1">Kutu 1</div> <!-- divler default olarak block elementtir-->
+    <div id="kutu2">Kutu 2</div>
+
+    <a href="">Link1</a> <!--a lar default olarak inline (yani sadece kendi alanı kadar yer kaplarlar block değiller )elementtir-->
+    <a href="">Link2</a>
+    <a href="">Link3</a>
+
+    <span>Lorem ipsum dolor sit amet consectetur.</span><!--spanlar default olarak inline (yani sadece kendi alanı kadar yer kaplarlar block değiller )elementtir-->
+    <span>Lorem ipsum dolor sit amet consectetur.</span>
+    <span>Lorem ipsum dolor sit amet consectetur.</span>
+
+</body>
+</html>

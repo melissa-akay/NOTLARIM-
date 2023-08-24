@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Kullanimi</title>
+    <style> /* herhangi bir position kodu girmeden static konumundalar.*/
+        .kutu{
+            width:150px;
+            height: 150px;
+        }
+        #kutu1{
+            background: lightpink;
+            position:fixed; /* sayfa aksa dahi her zaman görüntülenen sayfanın sağ altında bulunur.*/
+            bottom:0;
+            right:0;
+        }
+        #kutu2{
+            background:lightgreen;
+            position:absolute;
+            top: 50px;
+            left: 50px;
+        }
+        #kutu3{
+            background:lightblue;
+            position:relative;
+            top:50px;
+            left: 50px; /* relative dedikten sonra top ve left dediğimiz için 
+            kutunun var olan başlangıçtaki konumuna göre o boşlukları bıraktı.
+            absolute olsaydı, sayfanın dış çizgilerine göre konumlanırdı*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="kutu" id="kutu1">Kutu 1</div>
+    <div class="kutu" id="kutu2">Kutu 2</div>
+    <div class="kutu" id="kutu3">Kutu 3</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID VE CLASS KULLANIMI</title>
+
+    <style>
+        p{
+            color: blue;
+            font-size: 30px;
+        }
+        .kirmizi{
+            color:red;
+        }
+        .sari{
+            color: yellowgreen;
+            font-size: 25px;
+        }
+        /* ID ise class tan farklı olarak bir yere yalnızca id tanımlanabilir, bir yere id verildiğinde başka bir yere bir daha tanımlanamaz.
+           Css'te id vermek için # işareti ve sonrasında id nin adı girilir.
+        */
+        #baslik{
+            color:green;
+            font-size: 40px;
+            text-align: center;  
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="baslik">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="baslik">Lorem ipsum dolor sit amet.</h1>
+    <!-- iki yerde aynı id kullanılamaz, yalnız bir yerde id kullanılabilir.-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <!-- yukarıda inline bir örnektir ancak bu çok tercih edilmez.Bunun için class etiketi kulllanılabilir
+    css içersine de . ve sonrasında class adı yazılır. Bir aşağıda örneği var.-->
+    <p class="kirmizi">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="sari">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        /* padding bşr ögenin iç yapısından verdiği boşluk anlamına gelir.padding iç kısmın boşluğunda kullanılır.
+            margin, bir ögenin dış çevresinden verdiği boşluk anlamına geliyordu.*/
+
+        .kutu {
+
+            height: 150px;
+        }
+
+        #kutu1 {
+            background: lightpink;
+            padding: 20px;
+            /*kutunun dış çeperi ile kutu1 yazısı arasında bu boşluğu verir.
+                            4 bir taraftan 20 px lik boşluk verir.*/
+            /* dikkat! paddingte boşluk verdikçe kutunun büyüklüğü de artıyor.*/
+            /* padding in yönleri vardır; left,right,top,bottom olarak.Kutunun dış çeperi ile belirtilen yönlerde!*/
+
+        }
+
+        #kutu2 {
+            background: lightgreen;
+            padding: 150px 20px 175px 80px;
+            /* üst padding:150, sağ padding:20, alt padding:175,sol padding:80*/
+            /* margindeki gibi dörtlü ve ikili olarak yön isimleri yazılmadan sadece padding dendiğinde istenilen verilebilir*/
+
+        }
+
+        #kutu3 {
+            background: lightblue;
+
+        }
+
+        #kutu4 {
+            background: rebeccapurple;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kutu" id="kutu1">Kutu 1</div>
+    <div class="kutu" id="kutu2">Kutu 2</div>
+    <div class="kutu" id="kutu3">Kutu 3</div>
+    <div class="kutu" id="kutu4">Kutu 4</div>
+</body>
+
+</html>

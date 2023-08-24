@@ -1,0 +1,38 @@
+GRUP SELECTORS
+
+        (p)=tüm p etiketlerini etkiler.
+        (div p)= div içerisindeki tüm p etiketleri
+        (div.p)=tüm div ve p etiketleri
+        (p+div)=p etiketinden sonra gelen div etiketinden bahsederken kullanılır.css için tüm bu hepsi.
+PSEUDO SELECTORS
+1)Pseudo Element
+  ex1 p::first-line  {
+      font-weight:bold;
+      color:red;
+      word-spacing: 2px;
+      letter-spacing: 2px;
+
+  }   /* p etiketinin ilk satırından bahsederken ve onda değişiklikler yapmak isterken kullanılır*/       
+
+  ex2 p::first-letter{
+    font-size: 50px;
+  }
+    /* p etiketinin ilk harfini hedef alırken kullanılır.P etiketinin ilk harfindeki yapılacak değişiklikler için kullanılır.*/
+
+2) Pseudo Class
+  ex1 ul li{
+    /* ul nin içindeki il ler de yapılacak değişikler için kullanılabilir*/
+     }
+ex2 ul li:first-child{
+    /* ul nin içindeki li lerden ilki için yapılacak değişiklerde kullanılır.
+    first child yani ul nin li lerinden ilki hedef alındığında kullanılır.*/
+}
+ex3 ul li:last-child{
+    /* ul nin içindeki li lerden en sondakinde değişiklik yapılmak istendğinde kullanılır*/
+}
+ex4 a:hover{
+    /* hareketli geçiş yapılmak istendiğinde kullanılır.
+       a etiketi içerisinde linklerde kullanılır genellikle
+    
+    */
+}

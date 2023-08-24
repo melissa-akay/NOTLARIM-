@@ -1,0 +1,30 @@
+/*Daha önce, nesnelerin hizalamasi için float kullanmiştik.
+Şimdi ise nesnelerin birbirlerine göre olan konumlandırılmaları için position kavramlarini kullanicaz.*/
+/*POSITION:
+  -static
+  -relative
+  -fixed
+  -absolute
+  -sticky
+olmak üzere 5 farklı position seçeneği vardır.*/
+/*
+1)Static: Default olarak gelen değerdir.
+2)Relative:left,right,top,bottom değerleri işin içine girer, relative yaptıktan sonra top,left gibi özellikler de css e eklenerek biçimlendirme yapılabilir.
+ex: div#2{
+    position:relative;
+    top:50px;
+    left:50px;} 
+3)Absolute: Sayfanın başlangıç noktasına göre biçimlendirir.
+yani position:absolute dedikten sonra top 50px dediğimizde,
+sayfanın  en üst çizgisinden 50px uzaklıktaki yere konumlandırır.
+left 50px; dediğimizde ise sayfanın sol çizgisinden itibaren konumlanır.
+*Relative de html konumuna göre top,left gibi konumlar alırken, absolute sayfanın en dış kenar çizgilerine göre konum alır.
+4)Fixed: Ekran yukarı aşağı yapılsa dahi belirlenen konumunda kalır.
+ex: div#3{
+    position:fixed;
+    top:0;
+    right:0;} sayfanın her zaman sağ üstünde yer alır.
+5)Sticky: Sayfa aşağı doğru kaydırılsa dahi sayfayla beraber gelmesini sağlar.
+          Genelde başlıklarda menübarlarda kullanılır.
+
+*/

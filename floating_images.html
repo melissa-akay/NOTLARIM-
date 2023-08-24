@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Images </title>
+    <!-- float; resmi ve yazıyı istediğimiz gibi konumlandırmada kullanılır-->
+    <style>
+        img{
+            width:300px;  
+            float:right;/* resim sağda olacak hep.img etiketinde kulandığımız için resim dedik*/
+            /* resim ve yazının yan yana olması gerektiği durumlarda floating kullanılır*/
+        }
+        .bolum{
+            border: 1px solid red;
+            overflow: auto; /*overflow; div içerisinde taşmalar olduğunda kullanılır,
+            divde taşma olmaması için overflow scroll veya auto kullanılabilir.
+            scroll dediğimizde fazla yazı yine o div içerisine yazılır ama sayfada o div üzerine geldiğimizde yanda yukarı aşağı çubuğu çıkar
+            auto dediğimizde ise otomatik olarak yerleştirir.*/
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure laudantium accusamus est, magnam incidunt
+        eius dicta at cumque vero!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure laudantium accusamus est, magnam incidunt
+        eius dicta at cumque vero!</p>
+
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure laudantium accusamus est, magnam incidunt
+        eius dicta at cumque vero!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure laudantium accusamus est, magnam incidunt
+        eius dicta at cumque vero!</p>
+    <div class="bolum">
+    <img src="html css js" alt="">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Ipsum non sequi officiis, alias mollitia consectetur saepe iste soluta nulla vel suscipit, 
+    nisi repudiandae aliquam accusamus? Ipsa explicabo exercitationem voluptatem delectus.
+    </div>
+</body>
+
+</html>

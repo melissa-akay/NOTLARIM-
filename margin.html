@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style> /*Margin, ögelerin dört bir tarafında oluşturmak istediğimiz boşlukşları ifade eder.
+             sağ,sol,üst,alt olarak tek bir öge bazlı olabilirken tüm body için de geçerli kılınabilir.*/
+        body{
+            margin:0;/* body de margin 0, dediğimizde sayfanın hiçbir yerinde boşluk olmaz.sayfa sıfıra sıfır yerleşir.*/
+            /* genel olarak tarayıcı otomatik olarak margin boşluğu bırakır.*/
+        }
+        .kutu{
+            width:150px;
+            height: 150px;
+            float:left; /* kutular sola yaslı olarak yan yana dizilirler.*/
+            margin-right: 10px; /* tüm kutuların sağ tarafında 10pxlik boşluk bırakılır.*/
+            
+        }
+        #kutu1{
+            background: lightpink;
+            /*margin: 10px; /* birinci kutunun dört bir tarafından 10px lik boşluk bırakılır.*/
+        }
+        #kutu2{
+            background:lightgreen;
+            margin: 100px 15px 25px 38px; /* sırasıyla üst sağ alt ve sol taraflardaki boşlukları ifade eder.*/
+            /* saat yönünde bir sıralama vardır. 100=üst,15=sağ,25=alt,38=sol margini ifade eder.*/
+        }
+        #kutu3{
+            background:lightblue;
+            margin: 250px 150px; /*ilk değer üst ve altı ifade ediyor, ikinci değer sağ ve solu ifade ediyor.*/
+        }/* yani üstten ve alttan 250px lik boşluk bırakılacak, bir de sağ ve soldan 150 pxlik boşluk bırakılacak.*/
+
+        #kutu4{
+            background: rebeccapurple;
+            margin:auto; /* otomatik olarak sayfanın ortasında konumlandırılır.
+                            özellikle bir tercih yapılmadığında floatta left,right gibi, o zaman işe yarar
+                            ve otomatik olarak sayfanın ortasına konumlandırır.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu" id="kutu1">Kutu 1</div>
+    <div class="kutu" id="kutu2">Kutu 2</div>
+    <div class="kutu" id="kutu3">Kutu 3</div>
+    <div class="kutu" id="kutu4">Kutu 4</div>
+</body>
+</html>
